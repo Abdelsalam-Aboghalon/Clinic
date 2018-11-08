@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdelsalam.clinic.Delete_Doctors">
+<EditText
+    android:id="@+id/et_delete"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter ID Here"/>
+    <Button
+
+        android:id="@+id/btn_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_delete"
+        android:text="Delete By id"
+        android:onClick="delete_ID"
+        />
+    <Button
+
+        android:id="@+id/btn_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ID"
+        android:text="Delete All Database"
+        android:onClick="delete_All_Doctors"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_all"
+        android:text="Operation"
+        android:id="@+id/tv_operation"
+        android:textAlignment="center"/>
+</RelativeLayout>
